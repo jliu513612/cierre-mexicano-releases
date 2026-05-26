@@ -1,0 +1,8 @@
+{
+  "version": "7.11.0",
+  "release_date": "2026-05-26",
+  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.11.0/CierreMexicano-Setup.exe",
+  "sha256": "e8f36e8aa766ca91c2ac25d03ed10c79dabb8ba057dc5687c2af5ccafe86576b",
+  "size_bytes": 33065759,
+  "release_notes": "Cierre Mexicano v7.11.0 — Baseline V1.4\n\nPRIMERA RELEASE PUBLICADA. Versiones anteriores fueron distribuidas\nmanualmente; esta es la primera disponible vía auto-updater.\n\nCambios principales respecto al material distribuido en mano:\n\n• Multi-cliente: gestion de varios RFCs en la misma instalacion\n• Tipo de cambio Banxico FIX: integracion directa con SIE API\n• Cierre anual desde Visor SAT: import del XML descargado\n• Framework anti-bug: 180+ tests cubriendo invariantes fiscales SAT,\n  formula IVA neto, Anexo 20, calculo PP ISR, deduccion efectivo >$2K\n• 18 landmines fiscales corregidos:\n  - LIVA Art. 1°, 4°, 5° (tasas IVA, formula neto, deduccion efectivo)\n  - LISR Art. 14 (PP mensual)\n  - Anexo 20 (formula Total CFDI)\n  - Anexo 24 (codigo agrupador SAT)\n  - CFF Art. 29-A (formato UUID), 59-III (traspaso cuentas propias)\n  - CFF Art. 84 multas Reforma Fiscal 2026 ($17,020–$97,330 MXN)\n  - RMF 2.7.1.32 (Complemento de Pago 10 dias)\n  - Decimal money (sin float bugs de acumulacion)\n  - defusedxml en 5 modulos (parsing CFDI seguro)\n  - CLABE checksum Banxico, vigencia CSD 4 años\n• Auto-update via manifest publico (estrenado en esta version)\n\nCompatibilidad: Windows 10 / 11, 64-bit. CONTPAQi Contabilidad y SAE.\n\nPara soporte: contactar a Jun.\n"
+}
