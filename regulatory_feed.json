@@ -1,0 +1,48 @@
+{
+  "feed_version": 1,
+  "last_scan": "2026-05-28",
+  "source": "Monitoreo automatizado DOF / SAT (días hábiles)",
+  "note": "Cambios regulatorios mexicanos detectados y su estado en el software. 'actualizado' = el cálculo ya refleja el cambio. 'informativo' = sin impacto en cálculos. 'atencion' = requiere acción del contador.",
+  "updates": [
+    {
+      "fecha": "2026-01-01",
+      "cambio": "Multas CFF Art. 84 — Reforma Fiscal 2026",
+      "detalle": "Multa por CFDI sin Complemento de Pago actualizada a $17,020–$97,330 MXN por documento.",
+      "afecta": "Riesgo de Complemento de Pago (complemento_pago_monitor)",
+      "estado": "actualizado",
+      "fuente": "https://www.dof.gob.mx/"
+    },
+    {
+      "fecha": "2025-12-01",
+      "cambio": "RMF 2026 — Complemento de Pago, plazo 10 días",
+      "detalle": "Plazo de los 10 días naturales del mes siguiente para emitir el REP (RMF 2.7.1.32).",
+      "afecta": "Vigilancia de plazos de Complemento de Pago",
+      "estado": "actualizado",
+      "fuente": "https://www.dof.gob.mx/"
+    },
+    {
+      "fecha": "2026-05-15",
+      "cambio": "Oficios EFOS 69-B (listas definitivas)",
+      "detalle": "Actualización de la lista global 69-B de EFOS. El verificador descarga el CSV oficial del SAT cada 7 días.",
+      "afecta": "Verificación EFOS (verificador_efos)",
+      "estado": "actualizado",
+      "fuente": "https://www.sat.gob.mx/"
+    },
+    {
+      "fecha": "2026-04-30",
+      "cambio": "SCJN — plazo de cancelación de CFDI (LIF 2025 Art. 22)",
+      "detalle": "La Corte declaró inconstitucional el plazo de cancelación al 31-mar/30-abr. El software no impone ese hard-stop, así que no requirió cambio.",
+      "afecta": "Sin impacto en cálculos del software",
+      "estado": "informativo",
+      "fuente": "https://www.scjn.gob.mx/"
+    },
+    {
+      "fecha": "2026-01-01",
+      "cambio": "CFF Art. 29-A IX / 49-Bis — operación real (Reforma 2026)",
+      "detalle": "El SAT puede validar la materialidad de los CFDI. El software valida estructura + EFOS, pero la evidencia contractual (contratos, entregas) es responsabilidad del contador.",
+      "afecta": "Recomendación: conservar evidencia de materialidad",
+      "estado": "atencion",
+      "fuente": "https://www.dof.gob.mx/"
+    }
+  ]
+}
