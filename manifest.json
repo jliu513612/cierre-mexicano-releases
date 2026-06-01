@@ -1,8 +1,8 @@
 {
-  "version": "7.12.1",
-  "release_date": "2026-05-29",
-  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.12.1/CierreMexicano-Setup.exe",
-  "sha256": "9876f2e7a79fb7da697b8bdc3c9251ad6bf3e7e3964af8622803b1e7e7d5a897",
-  "size_bytes": 45375733,
-  "release_notes": "Cierre Mexicano v7.12.1 — Monitoreo SAT/DOF + nuevo enfoque\n\n• [Nuevo] Pestaña SAT = Monitoreo de cambios SAT/DOF\n  Ve qué cambios fiscales detectó el sistema y si el software YA los\n  refleja:\n    ✅ Actualizado  — el cálculo ya incluye el cambio\n    ℹ  Informativo — sin impacto en cálculos\n    ⚠  Atención     — requiere acción del contador\n  Doble clic en una fila abre la fuente oficial (DOF/SAT/SCJN). El panel\n  se actualiza en línea cuando hay novedades, y funciona offline con el\n  baseline incluido en esta versión.\n\n• [Enfoque] La app se posiciona por lo que de verdad importa frente a\n  las plataformas en la nube:\n    - Sin renta mensual\n    - Al día con los cambios del SAT (monitoreo diario del DOF)\n    - Soporte humano directo\n\nTodo lo de v7.12.0 sigue igual: interfaz workbench con pestañas,\nrejillas CFDIs / Banco / Pólizas, exportar a Excel, descarga directa\ndel SAT (Beta). Sin cambios en los cálculos fiscales.\n"
+  "version": "7.12.2",
+  "release_date": "2026-06-01",
+  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.12.2/CierreMexicano-Setup.exe",
+  "sha256": "b80bb42476615b7516c580b87f718eae4eba40701ff2d454619ad4d6a8a82c1d",
+  "size_bytes": 45366204,
+  "release_notes": "Version 7.12.2 — ver detalles en el repositorio."
 }
