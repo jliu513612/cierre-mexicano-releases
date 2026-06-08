@@ -1,8 +1,8 @@
 {
-  "version": "7.12.3",
-  "release_date": "2026-06-07",
-  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.12.3/CierreMexicano-Setup.exe",
-  "sha256": "f82a7a389685391b651cf4a9670abd8bd5b1f66ebbdf567348d739854a96ae27",
-  "size_bytes": 45396490,
-  "release_notes": "Vista previa: depreciacion, ajuste anual por inflacion y fluctuacion cambiaria (boton Fiscales beta). En validacion por contador; no usar para declaraciones oficiales hasta validarse. Exporta papel de trabajo Excel para verificacion."
+  "version": "7.12.4",
+  "release_date": "2026-06-08",
+  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.12.4/CierreMexicano-Setup.exe",
+  "sha256": "88cf45129752c8ef9a86de16c47afecc6943cb0d31d70208dda2e6ae170bc711",
+  "size_bytes": 45393557,
+  "release_notes": "Cierre Mexicano v7.12.4\n\n- Mejoras de presentación en el \"papel de trabajo\" (Excel) de las funciones fiscales.\n- Ajustes menores de textos y metadatos internos.\n\nEl resto de la aplicación funciona normalmente. Las funciones fiscales (depreciación de activos fijos, ajuste anual por inflación y fluctuación cambiaria) siguen en VISTA PREVIA, pendientes de validación por contador.\n"
 }
