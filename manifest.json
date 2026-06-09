@@ -1,8 +1,8 @@
 {
-  "version": "7.13.0",
+  "version": "7.13.1",
   "release_date": "2026-06-09",
-  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.13.0/CierreMexicano-Setup.exe",
-  "sha256": "08145cd5057663e80b22cde73e2cdf9eb019ff21bc3d898ad4039cb360f8fe16",
-  "size_bytes": 45394442,
-  "release_notes": "Cierre Mexicano v7.13.0\n\nNUEVO:\n- Descarga automática al abrir: con tu e.firma configurada, la aplicación busca y archiva en segundo plano los CFDIs nuevos desde tu última descarga. Sin esperas ni pasos manuales.\n- Rejilla de CFDIs con paginación: carpetas con miles de comprobantes se navegan por páginas (500 por página) sin congelar la ventana. La exportación a Excel sigue incluyendo todas las filas.\n- Modo de trabajo por cliente: al dar de alta un cliente eliges la profundidad del servicio — 1) Solo impuestos, 2) Impuestos + pólizas, 3) Completo (+banco). Las pestañas se ajustan automáticamente al modo del cliente seleccionado.\n\nLas funciones fiscales (depreciación de activos fijos, ajuste anual por inflación y fluctuación cambiaria) siguen en VISTA PREVIA, pendientes de validación por contador.\n"
+  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.13.1/CierreMexicano-Setup.exe",
+  "sha256": "45117f4c263907ed954f5fa2705b6205622b3dba2bbc9080a1ca17513512cede",
+  "size_bytes": 45400767,
+  "release_notes": "Cierre Mexicano v7.13.1\n\nMEJORAS DE INTERFAZ:\n- Barra de contexto global: el cliente y el periodo ahora están siempre visibles arriba, en cualquier pestaña. Siempre sabes con qué empresa y mes estás trabajando.\n- Rejilla de CFDIs: filtros en vivo (buscar por RFC, nombre o UUID; dirección; PUE/PPD), ordenamiento al hacer clic en los encabezados, y franja de totales (emitidos / recibidos / filas) siempre a la vista.\n- Contadores en las pestañas: CFDIs (321), Banco (14) — de un vistazo sabes cuánto hay en cada fase.\n- Franja de actividad en el pie: muestra el avance de la descarga automática de CFDIs en segundo plano.\n\nIncluye todas las novedades de v7.13.0 (descarga automática al abrir, paginación, modo de trabajo por cliente).\n"
 }
