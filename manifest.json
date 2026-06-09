@@ -1,8 +1,8 @@
 {
-  "version": "7.13.1",
+  "version": "7.14.0",
   "release_date": "2026-06-09",
-  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.13.1/CierreMexicano-Setup.exe",
-  "sha256": "45117f4c263907ed954f5fa2705b6205622b3dba2bbc9080a1ca17513512cede",
-  "size_bytes": 45400767,
-  "release_notes": "Cierre Mexicano v7.13.1\n\nMEJORAS DE INTERFAZ:\n- Barra de contexto global: el cliente y el periodo ahora están siempre visibles arriba, en cualquier pestaña. Siempre sabes con qué empresa y mes estás trabajando.\n- Rejilla de CFDIs: filtros en vivo (buscar por RFC, nombre o UUID; dirección; PUE/PPD), ordenamiento al hacer clic en los encabezados, y franja de totales (emitidos / recibidos / filas) siempre a la vista.\n- Contadores en las pestañas: CFDIs (321), Banco (14) — de un vistazo sabes cuánto hay en cada fase.\n- Franja de actividad en el pie: muestra el avance de la descarga automática de CFDIs en segundo plano.\n\nIncluye todas las novedades de v7.13.0 (descarga automática al abrir, paginación, modo de trabajo por cliente).\n"
+  "download_url": "https://github.com/jliu513612/cierre-mexicano-releases/releases/download/v7.14.0/CierreMexicano-Setup.exe",
+  "sha256": "1ed6088221e997ca2284a07340d675b9bf91c99add0769168cbe8e24e9849445",
+  "size_bytes": 45405301,
+  "release_notes": "Cierre Mexicano v7.14.0\n\nNUEVO — TABLERO DE CLIENTES (primera pestaña):\nAl abrir la aplicación, lo primero que ves es el estado de TODOS tus clientes para el periodo seleccionado, con semáforo de atención:\n\n- ROJO: CSD vencido o por vencer en 15 días o menos.\n- AMARILLO: CSD por vencer en 60 días; mes terminado sin cerrar; o PPDs pendientes de complemento de pago.\n- VERDE: al corriente.\n\nCada fila muestra: CFDIs archivados del periodo, estado del cierre, PPDs pendientes, vigencia del CSD y el motivo de la alerta. Doble clic en un cliente lo abre directamente. La pestaña muestra cuántos clientes requieren atención: Tablero (3).\n\nIncluye las mejoras de v7.13.x: descarga automática de CFDIs al abrir, barra de contexto global, filtros y totales en la rejilla, paginación y modo de trabajo por cliente.\n"
 }
