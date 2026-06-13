@@ -1,0 +1,48 @@
+# === COPIAR ESTE ARCHIVO AL REPO cierre-mexicano-releases ===
+# (junto con tc_feed_standalone.py en la raíz de ese repo)
+#
+# Publica el tipo de cambio (FIX Banxico = TC del DOF/SAT) cada día hábil,
+# en la nube — NO necesita la máquina de June, NI un PAT: el workflow corre
+# en el mismo repo donde vive tc_feed.json y commitea a sí mismo con el
+# GITHUB_TOKEN por defecto.
+#
+# Único secreto requerido (en cierre-mexicano-releases >
+#   Settings > Secrets and variables > Actions):
+#   BANXICO_TOKEN  = token gratuito del SIE Banxico (64 hex)
+
+name: Publicar tipo de cambio (DOF/SAT)
+
+permissions:
+  contents: write          # permite que el GITHUB_TOKEN haga commit/push
+
+on:
+  schedule:
+    - cron: "40 13 * * 1-5"   # ~07:40 CDMX, Lun-Vie
+  workflow_dispatch: {}        # botón "Run workflow" manual
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generar tc_feed.json
+        env:
+          BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
+        run: python tc_feed_standalone.py --out tc_feed.json
+
+      - name: Commit si cambió
+        run: |
+          git config user.name "tc-feed-bot"
+          git config user.email "tc-feed-bot@users.noreply.github.com"
+          if git diff --quiet -- tc_feed.json; then
+            echo "Sin cambios en el TC; nada que publicar."
+          else
+            git add tc_feed.json
+            git commit -m "TC DOF/SAT $(date -u +%F)"
+            git push
+          fi
