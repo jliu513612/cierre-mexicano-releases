@@ -1,9 +1,57 @@
 {
   "feed_version": 1,
-  "last_scan": "2026-06-01",
+  "last_scan": "2026-06-18",
   "source": "Monitoreo automatizado DOF / SAT (días hábiles)",
   "note": "Cambios regulatorios mexicanos detectados y su estado en el software. 'actualizado' = el cálculo ya refleja el cambio. 'informativo' = sin impacto en cálculos. 'atencion' = requiere acción del contador.",
   "updates": [
+    {
+      "fecha": "2026-06-12",
+      "cambio": "Estímulo IEPS combustibles (13–19 jun)",
+      "detalle": "SHCP publicó el acuerdo semanal de estímulos al IEPS de gasolinas y diésel para el periodo 13–19 de junio: estímulo a Magna sube 13.49%→15.22% (1.01 $/L, cuota 5.68), diésel baja 40.42%→39.10% (2.87 $/L, cuota 4.48), Premium sin estímulo. Afecta el precio de combustible, no el cálculo del software.",
+      "afecta": "Sin impacto en cálculos del software",
+      "estado": "informativo",
+      "fuente": "https://www.tiempo.com.mx/economia/gasolina-ieps-diesel-13-de-junio-2026/"
+    },
+    {
+      "fecha": "2026-06-11",
+      "cambio": "RMF 2026 1ª RM — 13ª versión anticipada (Anexos 1 y 2)",
+      "detalle": "Refinamiento iterativo: reforma regla 3.16.11 (factor de acumulación de inversiones en el extranjero), adiciona 11.7.3 (cálculo del precio base del diésel) y deroga 2.12.4. Ajuste de precio base de diésel (0.98 $/L). Sin cambios estructurales que afecten el alcance del software.",
+      "afecta": "Sin impacto en cálculos del software",
+      "estado": "informativo",
+      "fuente": "https://imcp.org.mx/noticias-fiscales-2026-128-sat-primera-resolucion-de-modificaciones-a-la-resolucion-miscelanea-fiscal-para-2026-y-anexos-1-y-2-decima-tercera-version-anticipada/"
+    },
+    {
+      "fecha": "2026-06-05",
+      "cambio": "Oficio EFOS 69-B — listado definitivo (500 05 00 00 00 2026 15917)",
+      "detalle": "El SAT publicó en el DOF un nuevo listado definitivo de 26 contribuyentes (EFOS) que no lograron desvirtuar la presunción del Art. 69-B del CFF. El verificador descarga el CSV oficial del SAT (TTL 7 días); la lista se incorpora automáticamente sin cambio de código.",
+      "afecta": "Verificación EFOS (verificador_efos / efos_scraper)",
+      "estado": "actualizado",
+      "fuente": "https://www.dof.gob.mx/nota_detalle.php?codigo=5789647&fecha=05/06/2026"
+    },
+    {
+      "fecha": "2026-06-05",
+      "cambio": "Estímulo IEPS combustibles (6–12 jun)",
+      "detalle": "SHCP publicó el acuerdo semanal de estímulos al IEPS de gasolinas y diésel para el periodo 6–12 de junio. Afecta el precio de combustible, no el cálculo del software.",
+      "afecta": "Sin impacto en cálculos del software",
+      "estado": "informativo",
+      "fuente": "https://www.dof.gob.mx/"
+    },
+    {
+      "fecha": "2026-06-04",
+      "cambio": "RGCE 2026 — 2ª Resolución de Modificaciones (versión anticipada)",
+      "detalle": "SAT publicó en su portal la 2ª versión anticipada de la 2ª RM a las Reglas Generales de Comercio Exterior: ajustes al SEA, depósito fiscal, certificación OEA y prórroga de la Manifestación de Valor electrónica al 31-jul-2026. Materia aduanera/comercio exterior.",
+      "afecta": "Sin impacto en cálculos del software",
+      "estado": "informativo",
+      "fuente": "https://imcp.org.mx/noticias-fiscales-2026-114-sat-segunda-resolucion-de-modificaciones-a-las-reglas-generales-de-comercio-exterior-para-2026-primera-version-anticipada/"
+    },
+    {
+      "fecha": "2026-06-04",
+      "cambio": "RMF 2026 1ª RM — 12ª versión anticipada (Anexos 1 y 2)",
+      "detalle": "Refinamiento iterativo de las mismas reglas operativas y Anexos 1 y 2 (estímulo a diésel). Sin cambios estructurales que afecten el alcance del software.",
+      "afecta": "Sin impacto en cálculos del software",
+      "estado": "informativo",
+      "fuente": "https://imcp.org.mx/noticias-fiscales-2026-123-sat-primera-resolucion-de-modificaciones-a-la-resolucion-miscelanea-fiscal-para-2026-y-anexos-1-y-2-decima-segunda-version-anticipada/"
+    },
     {
       "fecha": "2026-05-29",
       "cambio": "Estímulo IEPS combustibles (30 may–5 jun)",
@@ -11,38 +59,6 @@
       "afecta": "Sin impacto en cálculos del software",
       "estado": "informativo",
       "fuente": "https://sidof.segob.gob.mx/notas/5789077"
-    },
-    {
-      "fecha": "2026-05-28",
-      "cambio": "RMF 2026 1ª RM — 11ª versión anticipada",
-      "detalle": "Refinamiento iterativo de las mismas 3 reglas operativas y Anexos 1 y 2 (estímulo a diésel). Sin cambios estructurales que afecten el alcance del software.",
-      "afecta": "Sin impacto en cálculos del software",
-      "estado": "informativo",
-      "fuente": "https://imcp.org.mx/noticias-fiscales-2026-109-sat-primera-resolucion-de-modificaciones-a-la-resolucion-miscelanea-fiscal-para-2026-decima-primera-version-anticipada/"
-    },
-    {
-      "fecha": "2026-01-01",
-      "cambio": "Multas CFF Art. 84 — Reforma Fiscal 2026",
-      "detalle": "Multa por CFDI sin Complemento de Pago actualizada a $17,020–$97,330 MXN por documento.",
-      "afecta": "Riesgo de Complemento de Pago (complemento_pago_monitor)",
-      "estado": "actualizado",
-      "fuente": "https://www.dof.gob.mx/"
-    },
-    {
-      "fecha": "2025-12-01",
-      "cambio": "RMF 2026 — Complemento de Pago, plazo 10 días",
-      "detalle": "Plazo de los 10 días naturales del mes siguiente para emitir el REP (RMF 2.7.1.32).",
-      "afecta": "Vigilancia de plazos de Complemento de Pago",
-      "estado": "actualizado",
-      "fuente": "https://www.dof.gob.mx/"
-    },
-    {
-      "fecha": "2026-05-15",
-      "cambio": "Oficios EFOS 69-B (listas definitivas)",
-      "detalle": "Actualización de la lista global 69-B de EFOS. El verificador descarga el CSV oficial del SAT cada 7 días.",
-      "afecta": "Verificación EFOS (verificador_efos)",
-      "estado": "actualizado",
-      "fuente": "https://www.sat.gob.mx/"
     },
     {
       "fecha": "2026-04-30",
@@ -54,10 +70,26 @@
     },
     {
       "fecha": "2026-01-01",
+      "cambio": "Multas CFF Art. 84 — Reforma Fiscal 2026",
+      "detalle": "Multa por CFDI sin Complemento de Pago actualizada a $17,020–$97,330 MXN por documento.",
+      "afecta": "Riesgo de Complemento de Pago (complemento_pago_monitor)",
+      "estado": "actualizado",
+      "fuente": "https://www.dof.gob.mx/"
+    },
+    {
+      "fecha": "2026-01-01",
       "cambio": "CFF Art. 29-A IX / 49-Bis — operación real (Reforma 2026)",
       "detalle": "El SAT puede validar la materialidad de los CFDI. El software valida estructura + EFOS, pero la evidencia contractual (contratos, entregas) es responsabilidad del contador.",
       "afecta": "Recomendación: conservar evidencia de materialidad",
       "estado": "atencion",
+      "fuente": "https://www.dof.gob.mx/"
+    },
+    {
+      "fecha": "2025-12-01",
+      "cambio": "RMF 2026 — Complemento de Pago, plazo 10 días",
+      "detalle": "Plazo de los 10 días naturales del mes siguiente para emitir el REP (RMF 2.7.1.32).",
+      "afecta": "Vigilancia de plazos de Complemento de Pago",
+      "estado": "actualizado",
       "fuente": "https://www.dof.gob.mx/"
     }
   ]
