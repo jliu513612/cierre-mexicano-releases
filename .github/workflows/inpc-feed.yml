@@ -1,0 +1,71 @@
+# Publica el INPC mensual (INEGI/DOF vía Banxico SIE, serie SP1 = índice
+# GENERAL) en la nube — mismo modelo que tc-feed.yml: corre en este repo y
+# commitea a sí mismo con el GITHUB_TOKEN por defecto. Único secreto:
+# BANXICO_TOKEN (ya existe, es el mismo que usa tc-feed).
+#
+# El INEGI publica el mes anterior ~día 10 (CFF 20-bis); el cron cubre los
+# días 10-13 y workflow_dispatch permite forzarlo.
+#
+# CANDADO ANTES DE PUBLICAR (Q-339, SIL-110): el candidato se valida contra
+# lo YA publicado — _meta.serie == SP1 (CAL-53: la subyacente está prohibida
+# y el cliente rechaza el archivo entero vía inpc._serie_valida) y NINGÚN mes
+# ya publicado cambia ni se pierde. Un mes ya publicado que "cambiara" en
+# Banxico exige cotejo humano contra el DOF, no un bot que lo pise; los meses
+# NUEVOS vienen de la misma serie SP1 que se cotejó 4/4 contra el DOF.
+
+name: Publicar INPC (INEGI/DOF via Banxico)
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "40 14 10-13 * *"   # ~08:40 CDMX, días 10-13 de cada mes
+  workflow_dispatch: {}
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generar candidato
+        env:
+          BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
+        run: python inpc_feed_standalone.py --out inpc_candidato.json
+
+      - name: Validar candidato contra lo publicado (serie SP1 + meses publicados inmutables)
+        run: |
+          python - <<'EOF'
+          import json
+          nuevo = json.load(open("inpc_candidato.json", encoding="utf-8"))
+          viejo = json.load(open("inpc.json", encoding="utf-8"))
+          serie = nuevo.get("_meta", {}).get("serie")
+          assert serie == "SP1", f"serie {serie!r} != SP1 - NO publicar (CAL-53)"
+          vd, nd = viejo["datos"], nuevo["datos"]
+          movidos = [m for m in vd if m in nd and abs(float(nd[m]) - float(vd[m])) > 1e-9]
+          assert not movidos, (
+              f"meses YA PUBLICADOS cambiaron: {movidos} - NO publicar; "
+              f"una revision exige cotejo humano contra el DOF")
+          perdidos = [m for m in vd if m not in nd]
+          assert not perdidos, f"el candidato PIERDE meses: {perdidos} - NO publicar"
+          nuevos = sorted(set(nd) - set(vd))
+          print(f"candidato valido: {len(nd)} meses; nuevos: {nuevos or 'ninguno'}")
+          EOF
+
+      - name: Commit si hay meses nuevos
+        run: |
+          if python -c "import json,sys; a=set(json.load(open('inpc.json',encoding='utf-8'))['datos']); b=set(json.load(open('inpc_candidato.json',encoding='utf-8'))['datos']); sys.exit(0 if b-a else 1)"; then
+            mv inpc_candidato.json inpc.json
+            git config user.name "inpc-feed-bot"
+            git config user.email "inpc-feed-bot@users.noreply.github.com"
+            git add inpc.json
+            git commit -m "INPC INEGI/DOF $(date -u +%F)"
+            git push
+          else
+            echo "Sin meses nuevos; nada que publicar (el candidato se descarta)."
+          fi
