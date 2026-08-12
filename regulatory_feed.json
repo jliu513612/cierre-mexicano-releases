@@ -276,5 +276,6 @@
       "estado": "actualizado",
       "fuente": "https://dof.gob.mx/"
     }
-  ]
+  ],
+  "_sync_test": "drift inerte para calibrar feed-sync (se borra al sincronizar)"
 }
