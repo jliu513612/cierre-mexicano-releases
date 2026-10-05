@@ -3,8 +3,15 @@
 # commitea a sí mismo con el GITHUB_TOKEN por defecto. Único secreto:
 # BANXICO_TOKEN (ya existe, es el mismo que usa tc-feed).
 #
-# El INEGI publica el mes anterior ~día 10 (CFF 20-bis); el cron cubre los
-# días 10-13 y workflow_dispatch permite forzarlo.
+# El INEGI publica el mes anterior ~día 9-10 (plazo: CFF art. 20, 2º párrafo);
+# el cron cubre los días 8-14 y workflow_dispatch permite forzarlo.
+#
+# AVISO SI FALLA (2026-10-05): desde 1.0.47 el producto exige, a partir del día
+# 10, el índice del mes anterior para actualizar pagos extemporáneos; sin él PARA
+# y lo dice. Si este job no publica, todos los clientes ven esa parada. Por eso:
+# (a) cualquier paso que falle abre un issue asignado al dueño del repo, y
+# (b) a partir del día 11 se falla a propósito si el mes anterior sigue sin
+#     estar publicado (un job verde sin dato nuevo también es una avería).
 #
 # CANDADO ANTES DE PUBLICAR (Q-339, SIL-110): el candidato se valida contra
 # lo YA publicado — _meta.serie == SP1 (CAL-53: la subyacente está prohibida
@@ -17,10 +24,11 @@ name: Publicar INPC (INEGI/DOF via Banxico)
 
 permissions:
   contents: write
+  issues: write
 
 on:
   schedule:
-    - cron: "40 14 10-13 * *"   # ~08:40 CDMX, días 10-13 de cada mes
+    - cron: "40 14 8-14 * *"   # ~08:40 CDMX, días 8-14 de cada mes
   workflow_dispatch: {}
 
 jobs:
@@ -68,4 +76,33 @@ jobs:
             git push
           else
             echo "Sin meses nuevos; nada que publicar (el candidato se descarta)."
+          fi
+
+      - name: Vigilar atraso (desde el dia 11, el mes anterior tiene que estar publicado)
+        run: |
+          python - <<'EOF'
+          import json, sys
+          from datetime import datetime, timezone
+          hoy = datetime.now(timezone.utc)
+          a, m = (hoy.year, hoy.month - 1) if hoy.month > 1 else (hoy.year - 1, 12)
+          esperado = f"{a:04d}-{m:02d}"
+          ultimo = max(json.load(open("inpc.json", encoding="utf-8"))["datos"])
+          print(f"dia {hoy.day}; ultimo mes publicado: {ultimo}; esperado desde el dia 10: {esperado}")
+          if hoy.day >= 11 and ultimo < esperado:
+              sys.exit(f"ATRASO: es dia {hoy.day} y el INPC de {esperado} sigue sin publicarse "
+                       f"(ultimo: {ultimo}). Los clientes ven una parada al actualizar pagos.")
+          EOF
+
+      - name: Avisar si algo fallo (issue asignado al dueno del repo)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          titulo="INPC: el feed no publico ($(date -u +%Y-%m))"
+          cuerpo="El workflow del feed de INPC fallo o va con atraso. Corrida: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} . Mientras no se publique el indice del mes anterior, el producto para (y lo dice) al actualizar pagos extemporaneos hechos desde el dia 10. Revisar el log y, si hace falta, relanzar con workflow_dispatch."
+          n=$(gh issue list --repo "${{ github.repository }}" --state open --search "$titulo in:title" --json number --jq '.[0].number')
+          if [ -n "$n" ]; then
+            gh issue comment "$n" --repo "${{ github.repository }}" --body "$cuerpo"
+          else
+            gh issue create --repo "${{ github.repository }}" --title "$titulo" --body "$cuerpo" --assignee "${{ github.repository_owner }}"
           fi
