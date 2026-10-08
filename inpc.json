@@ -3,7 +3,7 @@
     "fuente": "Banxico SIE serie SP1 (INPC índice general; replica INEGI/DOF)",
     "serie": "SP1",
     "nota": "INPC base 2a quincena julio 2018 = 100. Verificar contra DOF.",
-    "actualizado": "2026-09-10"
+    "actualizado": "2026-10-08"
   },
   "datos": {
     "2018-01": "98.794999699501",
@@ -109,6 +109,7 @@
     "2026-05": "145.527",
     "2026-06": "145.131",
     "2026-07": "145.169",
-    "2026-08": "145.462"
+    "2026-08": "145.462",
+    "2026-09": "146.075"
   }
 }
