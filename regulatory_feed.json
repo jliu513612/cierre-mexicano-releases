@@ -1015,8 +1015,8 @@
     },
     {
       "fecha": "2025-12-01",
-      "cambio": "RMF 2026 — Complemento de Pago, plazo 10 días",
-      "detalle": "Plazo de los 10 días naturales del mes siguiente para emitir el REP (RMF 2.7.1.32).",
+      "cambio": "RMF 2026 — Complemento de Pago, plazo: quinto día natural",
+      "detalle": "El REP se emite a más tardar el quinto día natural del mes siguiente al del pago (RMF 2.7.1.32).",
       "afecta": "Vigilancia de plazos de Complemento de Pago",
       "estado": "actualizado",
       "fuente": "https://dof.gob.mx/"
