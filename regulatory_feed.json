@@ -1,9 +1,259 @@
 {
   "feed_version": 1,
-  "last_scan": "2026-10-13",
+  "last_scan": "2026-10-23",
   "source": "Monitoreo automatizado DOF / SAT (días hábiles)",
   "note": "Cambios regulatorios mexicanos detectados y su estado en el software. 'actualizado' = el cálculo ya refleja el cambio. 'informativo' = sin impacto en cálculos. 'atencion' = requiere acción del contador.",
   "updates": [
+    {
+      "fecha": "2026-10-23",
+      "cambio": "DOF: Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de las cuotas compensa",
+      "detalle": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de las cuotas compensatorias impuestas a las importaciones de recubrimientos cerámicos para muros y pisos originarias de la República Popular China, independientemente del país de procedencia.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802001&fecha=23/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802001"
+    },
+    {
+      "fecha": "2026-10-23",
+      "cambio": "DOF: Oficio 500-05-00-00-00-2026-24732 mediante el cual se comunica listado global de presunción de contribuyentes que se ubi",
+      "detalle": "Oficio 500-05-00-00-00-2026-24732 mediante el cual se comunica listado global de presunción de contribuyentes que se ubicaron en el supuesto previsto en el artículo 69-B, párrafo primero del Código Fiscal de la Federación.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801999&fecha=23/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801999"
+    },
+    {
+      "fecha": "2026-10-23",
+      "cambio": "DOF: Oficio 500-05-00-00-00-2026-24396 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de ",
+      "detalle": "Oficio 500-05-00-00-00-2026-24396 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación o en contra de la resolución a que se refiere el cuarto párrafo del artículo en comento, y una vez resuelto el mismo, el órgano jurisdiccional o administ",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801998&fecha=23/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801998"
+    },
+    {
+      "fecha": "2026-10-23",
+      "cambio": "DOF: Oficio 500-05-00-00-00-2026-24395 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de ",
+      "detalle": "Oficio 500-05-00-00-00-2026-24395 mediante el cual se comunica listado de contribuyentes que promovieron algún medio de defensa en contra del oficio de presunción a que se refiere el artículo 69-B primer párrafo del Código Fiscal de la Federación, vigente hasta el 24 de julio de 2018, o en contra de la resolución a que se refiere el tercer párrafo del artículo en comento, y una vez resuelto el mis",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801997&fecha=23/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801997"
+    },
+    {
+      "fecha": "2026-10-22",
+      "cambio": "DOF: Acuerdo por el que se destina al Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública, Órgano Administrativo",
+      "detalle": "Acuerdo por el que se destina al Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública, Órgano Administrativo Desconcentrado de la Secretaría de Seguridad y Protección Ciudadana, el inmueble federal denominado \"El Copal, Irapuato\", con Registro Federal Inmobiliario 11-11580-2 y superficie de 300,000.00 metros cuadrados, ubicado en la Avenida Paralímpico Nacional número 539, Código Posta",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801844&fecha=22/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801844"
+    },
+    {
+      "fecha": "2026-10-20",
+      "cambio": "DOF: Criterio No. 01/2026 por el que se emite el nuevo Formato de Acta Administrativa de Inspección y/o Verificación.",
+      "detalle": "Criterio No. 01/2026 por el que se emite el nuevo Formato de Acta Administrativa de Inspección y/o Verificación.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801540&fecha=20/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801540"
+    },
+    {
+      "fecha": "2026-10-20",
+      "cambio": "DOF: Acuerdo por el que se deja sin efectos el Criterio No. 6/2015 de aplicación general, en materia de Empresas Productivas ",
+      "detalle": "Acuerdo por el que se deja sin efectos el Criterio No. 6/2015 de aplicación general, en materia de Empresas Productivas del Estado y sus Empresas Productivas Subsidiarias, emitido por el Comité del Patrimonio Inmobiliario Federal y Paraestatal.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801539&fecha=20/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801539"
+    },
+    {
+      "fecha": "2026-10-16",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con Guatemala, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801459&fecha=16/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801459"
+    },
+    {
+      "fecha": "2026-10-16",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con los Estados Unidos de América, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801458&fecha=16/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801458"
+    },
+    {
+      "fecha": "2026-10-16",
+      "cambio": "DOF: Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuest",
+      "detalle": "Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuesto especial sobre producción y servicios, así como las cantidades por litro aplicables a los combustibles que se indican, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801457&fecha=16/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801457"
+    },
+    {
+      "fecha": "2026-10-16",
+      "cambio": "DOF: Acuerdo por el que se modifica el diverso por el que se da a conocer a los gobiernos de las entidades federativas la dis",
+      "detalle": "Acuerdo por el que se modifica el diverso por el que se da a conocer a los gobiernos de las entidades federativas la distribución y calendarización para la ministración, durante el ejercicio fiscal de 2026, de los recursos correspondientes a los Ramos Generales 28 Participaciones a Entidades Federativas y Municipios y 33 Aportaciones Federales para Entidades Federativas y Municipios, publicado el ",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801379&fecha=16/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801379"
+    },
+    {
+      "fecha": "2026-10-15",
+      "cambio": "DOF: Aviso sobre la vigencia de cuotas compensatorias.",
+      "detalle": "Aviso sobre la vigencia de cuotas compensatorias.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801250&fecha=15/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801250"
+    },
+    {
+      "fecha": "2026-10-15",
+      "cambio": "DOF: Convocatoria en cumplimiento de ejecutorias de amparo.",
+      "detalle": "Convocatoria en cumplimiento de ejecutorias de amparo.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801247&fecha=15/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801247"
+    },
+    {
+      "fecha": "2026-10-14",
+      "cambio": "DOF: Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, el inmueble federal denominad",
+      "detalle": "Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, el inmueble federal denominado \"Oficina de Representación en Chihuahua SEDATU\", con Registro Federal Inmobiliario 8-5798-6 y superficie de 426.36 metros cuadrados, ubicado en el Segundo Piso del Edificio Plaza Chihuahua, número 3107 de la Calle 18 de marzo, colonia Chihuahua Centro, código postal 31000, muni",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5801162&fecha=14/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5801162"
+    },
+    {
+      "fecha": "2026-10-09",
+      "cambio": "DOF: Acuerdo que modifica el diverso por el que se determina la circunscripción territorial de las aduanas y las secciones ad",
+      "detalle": "Acuerdo que modifica el diverso por el que se determina la circunscripción territorial de las aduanas y las secciones aduaneras de las aduanas.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800920&fecha=09/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800920"
+    },
+    {
+      "fecha": "2026-10-09",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con Guatemala, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800919&fecha=09/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800919"
+    },
+    {
+      "fecha": "2026-10-09",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con los Estados Unidos de América, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800918&fecha=09/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800918"
+    },
+    {
+      "fecha": "2026-10-09",
+      "cambio": "DOF: Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuest",
+      "detalle": "Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuesto especial sobre producción y servicios, así como las cantidades por litro aplicables a los combustibles que se indican, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800917&fecha=09/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800917"
+    },
+    {
+      "fecha": "2026-10-07",
+      "cambio": "DOF: Lineamientos en Materia de Proyectos de Infraestructura Estratégica para el Desarrollo con Bienestar.",
+      "detalle": "Lineamientos en Materia de Proyectos de Infraestructura Estratégica para el Desarrollo con Bienestar.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800619&fecha=07/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800619"
+    },
+    {
+      "fecha": "2026-10-02",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con Guatemala, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800259&fecha=02/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800259"
+    },
+    {
+      "fecha": "2026-10-02",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con los Estados Unidos de América, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800258&fecha=02/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800258"
+    },
+    {
+      "fecha": "2026-10-02",
+      "cambio": "DOF: Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuest",
+      "detalle": "Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuesto especial sobre producción y servicios, así como las cantidades por litro aplicables a los combustibles que se indican, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5800257&fecha=02/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5800257"
+    },
+    {
+      "fecha": "2026-09-28",
+      "cambio": "DOF: Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensato",
+      "detalle": "Resolución por la que se declara el inicio del procedimiento administrativo de examen de vigencia de la cuota compensatoria impuesta a las importaciones de artículos para cocinar de aluminio originarias de la República Popular China, independientemente del país de procedencia.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5799699&fecha=28/09/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5799699"
+    },
+    {
+      "fecha": "2026-09-21",
+      "cambio": "DOF: Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales",
+      "detalle": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de agosto de 2026.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5799139&fecha=21/09/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5799139"
+    },
+    {
+      "fecha": "2026-10-21",
+      "cambio": "Documento oficial del SAT cambió: el catálogo del CFDI 4.0 publicado por el SAT (página «Qué necesito para facturar»)",
+      "detalle": "El SAT publicó una versión nueva de el catálogo del CFDI 4.0 publicado por el SAT (página «Qué necesito para facturar»). Nada cambia en el programa hasta revisarla.",
+      "afecta": "Formato oficial del SAT: nada cambia en el programa hasta revisarlo",
+      "estado": "atencion",
+      "fuente": "https://www.sat.gob.mx/minisitio/Factura/emite_quenecesitoparafacturar.htm",
+      "origen": "monitor_dof",
+      "clave_dedup": "doc:sat_catalogo_cfdi40_entrada:4fadb9a69356aa54"
+    },
     {
       "fecha": "2026-10-13",
       "cambio": "DOF: Decreto por el que se modifica la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación.",
