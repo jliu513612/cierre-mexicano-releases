@@ -1,9 +1,19 @@
 {
   "feed_version": 1,
-  "last_scan": "2026-10-26",
+  "last_scan": "2026-10-28",
   "source": "Monitoreo automatizado DOF / SAT (días hábiles)",
   "note": "Cambios regulatorios mexicanos detectados y su estado en el software. 'actualizado' = el cálculo ya refleja el cambio. 'informativo' = sin impacto en cálculos. 'atencion' = requiere acción del contador.",
   "updates": [
+    {
+      "fecha": "2026-10-28",
+      "cambio": "DOF: Resolución que modifica las Disposiciones de carácter general aplicables a las sociedades controladoras de grupos financ",
+      "detalle": "Resolución que modifica las Disposiciones de carácter general aplicables a las sociedades controladoras de grupos financieros y subcontroladoras que regulan las materias que corresponden de manera conjunta a las Comisiones Nacionales Supervisoras.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802360&fecha=28/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802360"
+    },
     {
       "fecha": "2026-10-26",
       "cambio": "DOF: Circular Modificatoria 5/26 de la Única de Seguros y Fianzas.",
