@@ -1,9 +1,289 @@
 {
   "feed_version": 1,
-  "last_scan": "2026-10-28",
+  "last_scan": "2026-11-12",
   "source": "Monitoreo automatizado DOF / SAT (días hábiles)",
   "note": "Cambios regulatorios mexicanos detectados y su estado en el software. 'actualizado' = el cálculo ya refleja el cambio. 'informativo' = sin impacto en cálculos. 'atencion' = requiere acción del contador.",
   "updates": [
+    {
+      "fecha": "2026-11-12",
+      "cambio": "DOF: Acuerdo que modifica al diverso por el que se da a conocer la tarifa por los servicios que presta el Instituto Mexicano ",
+      "detalle": "Acuerdo que modifica al diverso por el que se da a conocer la tarifa por los servicios que presta el Instituto Mexicano de la Propiedad Industrial.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803630&fecha=12/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803630"
+    },
+    {
+      "fecha": "2026-11-12",
+      "cambio": "DOF: Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su aportación al patrimonio de ",
+      "detalle": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su aportación al patrimonio de la Fiscalía General de la República, el inmueble federal denominado \"Unidad Especializada en Investigación del Delito de Tortura\", con una superficie de terreno de 212.75 metros cuadrados, con Registro Federal Inmobiliario 9-17644-4, ubicado en la calle Tonalá número 104, colonia",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803624&fecha=12/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803624"
+    },
+    {
+      "fecha": "2026-11-12",
+      "cambio": "DOF: Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su aportación ad corpus al patr",
+      "detalle": "Acuerdo por el que se desincorpora del régimen de dominio público de la Federación, para su aportación ad corpus al patrimonio de la Fiscalía General de la República, el inmueble federal denominado \"La Muralla\", con Registro Federal Inmobiliario 22-3776-9, ubicado en la Carretera Federal 120, San Juan del Río-Amealco Km 6+550, Colonia San Miguel Galindo, Municipio de San Juan del Río, Estado de Qu",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803623&fecha=12/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803623"
+    },
+    {
+      "fecha": "2026-11-11",
+      "cambio": "DOF: Lista de valores mínimos para desechos de bienes muebles que generen las dependencias y entidades de la Administración P",
+      "detalle": "Lista de valores mínimos para desechos de bienes muebles que generen las dependencias y entidades de la Administración Pública Federal.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803540&fecha=11/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803540"
+    },
+    {
+      "fecha": "2026-11-09",
+      "cambio": "DOF: Convenio Específico de Coordinación para la transferencia de los bienes inmuebles relacionados con los establecimientos ",
+      "detalle": "Convenio Específico de Coordinación para la transferencia de los bienes inmuebles relacionados con los establecimientos de salud a que se refieren la Cláusula Segunda y el Anexo 1 del Convenio de Coordinación que establece la forma de colaboración en materia de personal, infraestructura, equipamiento, medicamentos y demás insumos asociados para la prestación gratuita de servicios de salud, para la",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803284&fecha=09/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803284"
+    },
+    {
+      "fecha": "2026-11-09",
+      "cambio": "DOF: Aviso por el que se da a conocer la tarifa autorizada para el cobro por el uso de infraestructura portuaria, aplicable e",
+      "detalle": "Aviso por el que se da a conocer la tarifa autorizada para el cobro por el uso de infraestructura portuaria, aplicable en el recinto portuario de Salina Cruz, Oax.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803280&fecha=09/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803280"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con Guatemala, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803259&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803259"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con los Estados Unidos de América, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803258&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803258"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuest",
+      "detalle": "Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuesto especial sobre producción y servicios, así como las cantidades por litro aplicables a los combustibles que se indican, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803257&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803257"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Acuerdo por el cual se expiden los Lineamientos para la aplicación del examen psicotécnico, para obtener la patente de a",
+      "detalle": "Acuerdo por el cual se expiden los Lineamientos para la aplicación del examen psicotécnico, para obtener la patente de agente aduanal y autorización de mandatarios.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803164&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803164"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+      "detalle": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803163&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803163"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Oficio 500-05-00-00-00-2026-30720 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuye",
+      "detalle": "Oficio 500-05-00-00-00-2026-30720 mediante el cual se comunica el nombre y la clave en el Registro Federal de Contribuyentes a que se refiere la fracción X del artículo 49 Bis del Código Fiscal de la Federación.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803162&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803162"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Oficio 500-05-00-00-00-2026-30410 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, ",
+      "detalle": "Oficio 500-05-00-00-00-2026-30410 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803161&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803161"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Oficio 500-05-00-00-00-2026-30336 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, ",
+      "detalle": "Oficio 500-05-00-00-00-2026-30336 mediante el cual se comunica listado global definitivo en términos del artículo 69-B, párrafo cuarto del Código Fiscal de la Federación.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803160&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803160"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "DOF: Anexos 1, 2, 7, 11, 14, 15 y 29 de la Cuarta Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, p",
+      "detalle": "Anexos 1, 2, 7, 11, 14, 15 y 29 de la Cuarta Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026, publicada el 30 de octubre de 2026.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5803159&fecha=06/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5803159"
+    },
+    {
+      "fecha": "2026-11-06",
+      "cambio": "Documento oficial del SAT cambió: el catálogo del CFDI 4.0 publicado por el SAT (página «Qué necesito para facturar»)",
+      "detalle": "El SAT publicó una versión nueva de el catálogo del CFDI 4.0 publicado por el SAT (página «Qué necesito para facturar»). Nada cambia en el programa hasta revisarla.",
+      "afecta": "Formato oficial del SAT: nada cambia en el programa hasta revisarlo",
+      "estado": "atencion",
+      "fuente": "https://www.sat.gob.mx/minisitio/Factura/emite_quenecesitoparafacturar.htm",
+      "origen": "monitor_dof",
+      "clave_dedup": "doc:sat_catalogo_cfdi40_entrada:ac4769fe15bf6f94"
+    },
+    {
+      "fecha": "2026-11-04",
+      "cambio": "DOF: Acuerdo por el que se determina la administración directa por parte del Instituto de Administración y Avalúos de Bienes ",
+      "detalle": "Acuerdo por el que se determina la administración directa por parte del Instituto de Administración y Avalúos de Bienes Nacionales, bajo la figura de Inmueble Federal Compartido, en la modalidad de Palacio Federal, del inmueble denominado \"Palacio Federal de Zamora\", con superficie de 1,847.82 metros cuadrados y Registro Federal Inmobiliario número 16-7364-3, ubicado en Avenida Hidalgo Sur, número",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802938&fecha=04/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802938"
+    },
+    {
+      "fecha": "2026-11-04",
+      "cambio": "DOF: Acuerdo por el que se destina a la Secretaría de Marina el inmueble federal denominado \"Instalaciones Administrativas (o",
+      "detalle": "Acuerdo por el que se destina a la Secretaría de Marina el inmueble federal denominado \"Instalaciones Administrativas (oficinas)\", con Registro Federal Inmobiliario 9-21127- 6 y superficie de 5,696.14 metros cuadrados, el cual proviene de un inmueble de mayor extensión, ubicado en Avenida Heroica Escuela Naval Militar número 701, colonia Presidentes Ejidales Segunda Sección, Código Postal 04470, A",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802937&fecha=04/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802937"
+    },
+    {
+      "fecha": "2026-11-03",
+      "cambio": "DOF: Acuerdo por el que se destina a la Secretaría de Marina el inmueble federal denominado \"Sanatorio Naval de Santa Rosalía",
+      "detalle": "Acuerdo por el que se destina a la Secretaría de Marina el inmueble federal denominado \"Sanatorio Naval de Santa Rosalía, B.C.S\"., con Registro Federal Inmobiliario 3-3488-0 y superficie de 334.38 metros cuadrados, ubicado en Calle Las Flores número 19, Colonia Mesa México, Código Postal 23920, Localidad de Santa Rosalía, Municipio de Mulegé, Estado de Baja California Sur.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802761&fecha=03/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802761"
+    },
+    {
+      "fecha": "2026-11-03",
+      "cambio": "DOF: Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, los inmuebles federales denom",
+      "detalle": "Acuerdo por el que se destina a la Secretaría de Desarrollo Agrario, Territorial y Urbano, los inmuebles federales denominados Oficinas Centrales Sedatu \"Reforma 362\", con Registro Federal Inmobiliario 9-19858-6 y superficie de 555.75 metros cuadrados y Oficinas Centrales Sedatu \"Reforma 364\", con Registro Federal Inmobiliario 9-19857-7 y superficie de 1,470.16 metros cuadrados, ubicados en Paseo ",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802760&fecha=03/11/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802760"
+    },
+    {
+      "fecha": "2026-10-30",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con Guatemala, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802699&fecha=30/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802699"
+    },
+    {
+      "fecha": "2026-10-30",
+      "cambio": "DOF: Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la",
+      "detalle": "Acuerdo por el cual se dan a conocer los montos de los estímulos fiscales aplicables a la enajenación de gasolinas en la región fronteriza con los Estados Unidos de América, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802698&fecha=30/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802698"
+    },
+    {
+      "fecha": "2026-10-30",
+      "cambio": "DOF: Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuest",
+      "detalle": "Acuerdo por el que se dan a conocer los porcentajes, los montos del estímulo fiscal y las cuotas disminuidas del impuesto especial sobre producción y servicios, así como las cantidades por litro aplicables a los combustibles que se indican, correspondientes al periodo que se especifica.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802697&fecha=30/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802697"
+    },
+    {
+      "fecha": "2026-10-30",
+      "cambio": "DOF: Acuerdo por el que se establecen acciones de simplificación y mejora administrativa para trámites que se realizan ante e",
+      "detalle": "Acuerdo por el que se establecen acciones de simplificación y mejora administrativa para trámites que se realizan ante el Instituto de Administración y Avalúos de Bienes Nacionales.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802598&fecha=30/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802598"
+    },
+    {
+      "fecha": "2026-10-30",
+      "cambio": "DOF: Cuarta Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026.",
+      "detalle": "Cuarta Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2026.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "atencion",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802597&fecha=30/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802597"
+    },
+    {
+      "fecha": "2026-10-29",
+      "cambio": "DOF: Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales",
+      "detalle": "Acuerdo por el cual se da a conocer el informe sobre la recaudación federal participable y las participaciones federales, así como los procedimientos de cálculo, por el mes de septiembre de 2026.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802461&fecha=29/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802461"
+    },
+    {
+      "fecha": "2026-10-29",
+      "cambio": "DOF: Acuerdo por el que se dan a conocer los estímulos fiscales a la gasolina y al diésel en los sectores pesquero y agropecu",
+      "detalle": "Acuerdo por el que se dan a conocer los estímulos fiscales a la gasolina y al diésel en los sectores pesquero y agropecuario para el mes de noviembre de 2026.",
+      "afecta": "Aviso normativo — cruzar con los artículos que el software usa (revisión humana)",
+      "estado": "informativo",
+      "fuente": "https://dof.gob.mx/nota_detalle.php?codigo=5802460&fecha=29/10/2026",
+      "origen": "monitor_dof",
+      "clave_dedup": "dof:5802460"
+    },
+    {
+      "fecha": "2026-10-29",
+      "cambio": "Documento oficial del SAT cambió: el catálogo del CFDI 4.0 publicado por el SAT (página «Qué necesito para facturar»)",
+      "detalle": "El SAT publicó una versión nueva de el catálogo del CFDI 4.0 publicado por el SAT (página «Qué necesito para facturar»). Nada cambia en el programa hasta revisarla.",
+      "afecta": "Formato oficial del SAT: nada cambia en el programa hasta revisarlo",
+      "estado": "atencion",
+      "fuente": "https://www.sat.gob.mx/minisitio/Factura/emite_quenecesitoparafacturar.htm",
+      "origen": "monitor_dof",
+      "clave_dedup": "doc:sat_catalogo_cfdi40_entrada:073e680434555df4"
+    },
     {
       "fecha": "2026-10-28",
       "cambio": "DOF: Resolución que modifica las Disposiciones de carácter general aplicables a las sociedades controladoras de grupos financ",
