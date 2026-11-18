@@ -1,9 +1,9 @@
 {
-  "fecha_dof": "2026-11-13",
-  "tc_obligaciones": 18.5525,
+  "fecha_dof": "2026-11-17",
+  "tc_obligaciones": 18.4677,
   "fix_hoy": null,
-  "fecha_fix_hoy": "2026-11-17",
+  "fecha_fix_hoy": "2026-11-18",
   "fuente": "Banxico SIE SF43718 (FIX) / DOF",
-  "actualizado_utc": "2026-11-17T13:42:23Z",
+  "actualizado_utc": "2026-11-18T13:42:26Z",
   "nota": "Publicado por job diario; el cliente lo lee sin token."
 }
